@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>SPORTMAX - Thời Trang Thể Thao Cao Cấp | Đồ Tập Gym, Yoga Chính Hãng</title>
+    <title>SPORTMAX - Thời Thời Trang Thể Thao Cao Cấp | Đồ Tập Gym, Yoga Chính Hãng</title>
     <meta name="description" content="Khám phá bộ sưu tập quần áo thể thao cao cấp SPORTMAX. Công nghệ Ultra-Breathe co giãn 4 chiều, thấm hút vượt trội. Mua ngay nhận mã giảm giá 20% và Freeship!">
     <meta name="keywords" content="quần áo thể thao, đồ tập gym cao cấp, quần áo yoga, sportmax thời trang thể thao">
     
@@ -13,6 +13,115 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <style>
+        /* --- TIÊU CHUẨN Y2: BỔ SUNG CSS CODE GIAO DIỆN MOBILE-FIRST & TIỆN ÍCH POPUP --- */
+        
+        /* Cấu hình nút bấm đạt tiêu chuẩn kích thước ngón tay (Min-height 48px) */
+        .btn, .form-group input, .form-group select, .btn-cookie-accept, .btn-cookie-deny {
+            min-height: 48px;
+        }
+
+        /* Widget QR Code dính góc phải màn hình dẫn tới trang ưu đãi */
+        .qr-sticky-box {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            z-index: 999;
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            text-align: center;
+            border: 2px solid #ff416c;
+            max-width: 110px;
+            transition: all 0.3s ease;
+        }
+        .qr-sticky-box p {
+            font-size: 10px;
+            font-weight: 700;
+            margin-top: 5px;
+            color: #111111;
+            line-height: 1.2;
+        }
+
+        /* TIÊU CHUẨN Y4: Thanh thông báo chấp thuận Cookie (Cookie Consent) luật GDPR */
+        #cookie-notice {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(17, 17, 17, 0.98);
+            color: #ffffff;
+            padding: 15px 20px;
+            z-index: 9999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 13px;
+            border-top: 3px solid #ff416c;
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+        }
+        .cookie-btn-group {
+            display: flex;
+            gap: 10px;
+        }
+        .btn-cookie-accept {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: #ffffff;
+            padding: 0 20px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .btn-cookie-deny {
+            background: transparent;
+            color: #cccccc;
+            padding: 0 15px;
+            border: 1px solid #555;
+            cursor: pointer;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        /* --- BREAKPOINTS RESPONSIVE CHO MOBILE-FIRST --- */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none; /* Ẩn menu ngang trên Mobile để tối ưu hóa không gian hiển thị sạch sẽ */
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+            #cookie-notice {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+            .qr-sticky-box {
+                bottom: 110px;
+                right: 10px;
+                max-width: 85px;
+                padding: 6px;
+            }
+            .qr-sticky-box p {
+                font-size: 8px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -31,6 +140,19 @@
             </nav>
         </div>
     </header>
+
+    <div class="qr-sticky-box">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://vietmhpd09907-sketch.github.io/ASM/" alt="Mã QR Code nhận ưu đãi đặc biệt thương hiệu Sportmax">
+        <p>QUÉT NHẬN ƯU ĐÃI 20%</p>
+    </div>
+
+    <div id="cookie-notice">
+        <span>SPORTMAX sử dụng hệ thống cookie để tối ưu hóa tính năng mua sắm và đem lại trải nghiệm mượt mà nhất cho bạn trên website. Bằng việc tiếp tục duyệt trang, bạn đồng ý với điều khoản bảo mật của chúng tôi.</span>
+        <div class="cookie-btn-group">
+            <button class="btn-cookie-deny" onclick="closeCookieNotice()">Từ chối</button>
+            <button class="btn-cookie-accept" onclick="closeCookieNotice()">Tôi đồng ý</button>
+        </div>
+    </div>
 
     <main>
         <section id="trang-chu" class="page-section" style="padding-top:0;">
@@ -136,7 +258,7 @@
                     
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMcHpGh2i6YUVv-DZ6u8AG0jq82ypfgvP9zo4OheMBAw&s=10">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMcHpGh2i6YUVv-DZ6u8AG0jq82ypfgvP9zo4OheMBAw&s=10" alt="Áo thun gym nam slimfit ultra">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-AN-01</div>
@@ -145,13 +267,13 @@
                                 <span class="price-sale">245.000 đ</span>
                                 <span class="price-original">350.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU8ev2MY83JpxSHqznLdn7clgZ189On16nUxexNAPCFw&s=10">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU8ev2MY83JpxSHqznLdn7clgZ189On16nUxexNAPCFw&s=10" alt="Áo ba lỗ thể thao nam tanktop">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-AN-02</div>
@@ -160,13 +282,13 @@
                                 <span class="price-sale">199.000 đ</span>
                                 <span class="price-original">290.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="data:image/webp;base64,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">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ1LCkN_J_-EahfaAjLaJzC4AmauNHo9Mk57CXvpPJFg&s=10" alt="Áo dài tay nén cơ compression">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-AN-03</div>
@@ -175,13 +297,13 @@
                                 <span class="price-sale">315.000 đ</span>
                                 <span class="price-original">450.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVAUCKJTJKOBPboMuY97Yen4B-j5GM4DQ5z5m39jh4TQ&s">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVAUCKJTJKOBPboMuY97Yen4B-j5GM4DQ5z5m39jh4TQ&s" alt="Áo bra tập gym nữ">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-NU-01</div>
@@ -190,13 +312,13 @@
                                 <span class="price-sale">275.000 đ</span>
                                 <span class="price-original">390.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ007HPu9BbQr5LIwjsNAdGo4ujlVGcvLF5QRobnsURw&s=10">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ007HPu9BbQr5LIwjsNAdGo4ujlVGcvLF5QRobnsURw&s=10" alt="Áo thun tập gym nữ croptop">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-NU-02</div>
@@ -205,13 +327,13 @@
                                 <span class="price-sale">225.000 đ</span>
                                 <span class="price-original">320.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDNZUgNmoFdy-fPoYiTNNOHplWtoDDh-sTWVj0B_CYw&s=10">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDNZUgNmoFdy-fPoYiTNNOHplWtoDDh-sTWVj0B_CYw&s=10" alt="Áo khoác thể thao nữ">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-NU-03</div>
@@ -220,13 +342,13 @@
                                 <span class="price-sale">399.000 đ</span>
                                 <span class="price-original">550.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0g5aeUsUPpJ4udMJWPZaWqUVP8sLk4FUv-tccwYXv1A&s=10">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0g5aeUsUPpJ4udMJWPZaWqUVP8sLk4FUv-tccwYXv1A&s=10" alt="Quần short nam 2 lớp">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-QN-01</div>
@@ -235,13 +357,13 @@
                                 <span class="price-sale">265.000 đ</span>
                                 <span class="price-original">380.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSugGCtRH6nu599kY1N1MAUiD2TX_YUb5HKeJzlFkmXmA&s=10">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSugGCtRH6nu599kY1N1MAUiD2TX_YUb5HKeJzlFkmXmA&s=10" alt="Quần short thun nữ đùi">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-QN-02</div>
@@ -250,13 +372,13 @@
                                 <span class="price-sale">185.000 đ</span>
                                 <span class="price-original">280.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShBiQYacm_Yqkkt7WmmwjBZUTMuBqaJ0hGenlYYgOWLQ&s=10">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShBiQYacm_Yqkkt7WmmwjBZUTMuBqaJ0hGenlYYgOWLQ&s=10" alt="Quần short thể thao nam">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-QN-03</div>
@@ -265,13 +387,13 @@
                                 <span class="price-sale">179.000 đ</span>
                                 <span class="price-original">260.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXM3gEBf7m4p0DYElQF99HHNiYXqsuUKz8dP4BYRKdyQ&s">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXM3gEBf7m4p0DYElQF99HHNiYXqsuUKz8dP4BYRKdyQ&s" alt="Bộ đồ yoga nữ liền thân">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-YG-01</div>
@@ -280,13 +402,13 @@
                                 <span class="price-sale">485.000 đ</span>
                                 <span class="price-original">690.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbIrOy3x5WPMl4ucM9dzbHGucpHCYPZznTlKmvnQdS5g&s=10">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbIrOy3x5WPMl4ucM9dzbHGucpHCYPZznTlKmvnQdS5g&s=10" alt="Quần legging yoga nữ">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-YG-02</div>
@@ -295,13 +417,13 @@
                                 <span class="price-sale">295.000 đ</span>
                                 <span class="price-original">420.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>  
 
                     <div class="product-card">
-                        <div class="product-img-ttps://imagebox">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT34R3HvYow9GYesVmCsLEgogPoM4TYMYULeEu2MGC-Hg&s=10">
+                        <div class="product-img-box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT34R3HvYow9GYesVmCsLEgogPoM4TYMYULeEu2MGC-Hg&s=10" alt="Áo chạy bộ nam">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-CB-01</div>
@@ -310,13 +432,13 @@
                                 <span class="price-sale">249.000 đ</span>
                                 <span class="price-original">360.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuHdrGbhG6W6Zg3HokKgmp2dIq6iRjC9UXMys2ehRMwA&s">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuHdrGbhG6W6Zg3HokKgmp2dIq6iRjC9UXMys2ehRMwA&s" alt="Áo chạy bộ nữ">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-CB-02</div>
@@ -325,13 +447,13 @@
                                 <span class="price-sale">239.000 đ</span>
                                 <span class="price-original">340.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZqkJ1YcUdeGm_RAzYTSj2T1tuWhwAofbf0sNdcuFs3Q&s=10">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZqkJ1YcUdeGm_RAzYTSj2T1tuWhwAofbf0sNdcuFs3Q&s=10" alt="Áo bóng đá đội tuyển">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-BD-01</div>
@@ -340,13 +462,13 @@
                                 <span class="price-sale">165.000 đ</span>
                                 <span class="price-original">250.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-img-box">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfEYdW_6LY3xtUo5mmRKablILjl1Amuw1_m9s4Th15AA&s=10">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfEYdW_6LY3xtUo5mmRKablILjl1Amuw1_m9s4Th15AA&s=10" alt="Áo đá banh phối đơn sắc">
                         </div>
                         <div class="product-info">
                             <div class="product-sku">Mã: SPM-BD-02</div>
@@ -355,7 +477,7 @@
                                 <span class="price-sale">149.000 đ</span>
                                 <span class="price-original">220.000 đ</span>
                             </div>
-                            <a href="https://multiaccountmanager.com/go/multilogin" class="btn product-btn" target="_blank">MUA NGAY</a>
+                            <a href="" class="btn product-btn" target="_blank">MUA NGAY</a>
                         </div>
                     </div>
 
@@ -430,5 +552,10 @@
         </div>
     </footer>
 
+    <script>
+        function closeCookieNotice() {
+            document.getElementById('cookie-notice').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
